@@ -15,7 +15,7 @@ def create_book(request):
                 book.authors.set(authors)
                 msg = 'save ok'
             except Exception as e:
-                msg  =  'Found somthing when wrong'
+                msg  =  'Found something when wrong'
                       
             return render(request, 'msg.html', {'msg':msg})
         else:
